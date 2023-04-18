@@ -28,3 +28,5 @@ CREATE TABLE Reflections (
 npm i
 npm start
 ```
+
+Use **Authorization** key from Header and set **Bearer** ```token```  as *Value* wtih ```token``` that received after login
