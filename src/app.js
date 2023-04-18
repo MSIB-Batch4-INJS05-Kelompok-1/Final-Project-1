@@ -8,14 +8,13 @@ const PORT = 3000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.use("/api/v1/auth", authRoutes); 
+app.use("/api/v1/users", authRoutes);
 app.use("/api/v1/reflections", reflectionRoutes);
 
 app.listen(PORT, () => {
-  console.log(`Example app listening at http://localhost:${PORT}`);
+  console.log(`Reflection app listening at http://localhost:${PORT}`);
 });
